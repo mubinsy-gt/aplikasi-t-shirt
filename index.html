@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trendy T-Shirts Online Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <header class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img alt="My Brand Logo" class="h-10 w-15 mr-2" src="./images/logo.png"/>
+      </div>
+      <nav>
+        <a class="text-white px-4" href="#home">Home</a>
+        <a class="text-white px-4" href="#products">Products</a>
+        <a class="text-white px-4" href="#accessories">Accessories</a>
+        <a class="text-white px-4" href="#about">About Us</a>
+        <a class="text-white px-4" href="#contact">Contact</a>
+        <a id="cart" class="text-white px-4 cursor-pointer">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section class="container mx-auto p-6" id="home">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold mb-4">Welcome to Trendy T-Shirts</h2>
+      <p class="text-lg mb-6">Discover the latest trends in t-shirts with our exclusive collection.</p>
+      <img alt="Model wearing a trendy t-shirt" class="h-[500px] w-auto mx-auto object-cover rounded-lg" src="./images/lobby.jpg"/>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="container mx-auto p-6" id="products">
+    <h2 class="text-3xl font-bold mb-6">T-SHIRT</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="product-card">
+        <img alt="Main Brand T-Shirt" class="product-img" src="./images/mainbrand.png"/>
+        <h3 class="product-title">Main Brand T-Shirt</h3>
+        <p class="product-desc">High-quality cotton t-shirt with our main brand design.</p>
+        <p class="product-price">Rp. 80.000</p>
+        <button class="btn-primary" data-product="Main Brand T-Shirt" data-price="80000" data-img="./images/mainbrand.png">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img alt="Free Design T-Shirt" class="product-img" src="./images/bebas.png"/>
+        <h3 class="product-title">Free Design T-Shirt</h3>
+        <p class="product-desc">Comfortable t-shirt with a free design.</p>
+        <p class="product-price">Rp.75.000</p>
+        <button class="btn-primary" data-product="Free Design T-Shirt" data-price="75000" data-img="./images/bebas.png">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img alt="Custom Design T-Shirt" class="product-img" src="./images/kustom.png"/>
+        <h3 class="product-title">Custom Design T-Shirt</h3>
+        <p class="product-desc">Stylish t-shirt with a custom design.</p>
+        <p class="product-price">Rp.85.000</p>
+        <button class="btn-primary" data-product="Custom Design T-Shirt" data-price="85000" data-img="./images/kustom.png">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accessories Section -->
+  <section class="container mx-auto p-6" id="accessories">
+    <h2 class="text-3xl font-bold mb-6">Accessories</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="accessory-card">
+        <img alt="Cap" class="accessory-img" src="./images/cap.png"/>
+        <h3 class="accessory-title">Stylish Cap</h3>
+        <p class="accessory-desc">A trendy cap to complement your look.</p>
+        <p class="accessory-price">Rp. 35.000</p>
+        <button class="btn-primary-accessory">Add to Cart</button>
+      </div>
+      <div class="accessory-card">
+        <img alt="Sunglasses" class="accessory-img" src="./images/kacamata.png"/>
+        <h3 class="accessory-title">Sunglasses</h3>
+        <p class="accessory-desc">Sleek and stylish sunglasses for any occasion.</p>
+        <p class="accessory-price">Rp. 20.000</p>
+        <button class="btn-primary-accessory">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="container mx-auto p-6" id="about">
+    <h2 class="text-3xl font-bold mb-6">About Us</h2>
+    <p class="text-lg">
+        Welcome to <strong>Trendy T-Shirts</strong>, your ultimate destination for the latest trends in t-shirts and accessories! We're more than just a store — we're a lifestyle. Our carefully curated collection is designed to not only make you look amazing but also feel incredible every time you wear our products. Whether you're rocking bold graphic tees or pairing classic designs with chic accessories, we've got something for every style and personality.
+      </p>
+      
+      <p class="text-lg mt-4">
+        At <strong>Trendy T-Shirts</strong>, we believe that fashion is a powerful way to express yourself. That's why our mission is simple: to bring you high-quality, on-trend pieces that inspire confidence and elevate your everyday style. We want you to feel like the best version of yourself in every outfit, and we're here to make sure that happens!
+      </p>
+      
+      <p class="text-lg mt-4">
+        Our commitment to you goes beyond just fashion — we prioritize customer satisfaction above all else. From the moment you browse our website to the day your package arrives, we're here to ensure you have an exceptional shopping experience. We offer easy returns, fast shipping, and a responsive customer service team that's always ready to assist you.
+      </p>
+      
+      <p class="text-lg mt-4">
+        Join the <strong>Trendy T-Shirts</strong> community today and discover the fashion that speaks to you. With us, it’s not just about buying clothes; it’s about embracing a bold, confident style that’s uniquely yours. We're excited to be part of your journey toward looking and feeling your best!
+      </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container mx-auto p-6" id="contact">
+    <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+    <form class="bg-white p-6 rounded-lg shadow-lg">
+      <div class="mb-4">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-input" id="name" type="text">
+      </div>
+      <div class="mb-4">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" id="email" type="email">
+      </div>
+      <div class="mb-4">
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-input" id="message"></textarea>
+      </div>
+      <button class="btn-primary" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="bg-gray-800 text-white p-4 text-center">
+    <p>© 2024 Trendy T-Shirts. All rights reserved.</p>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="fixed inset-0 bg-gray-700 bg-opacity-50 flex justify-center items-center" style="display: none;">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-2/3 md:w-1/3">
+      <h2 class="text-2xl font-bold mb-4">Your Cart</h2>
+      <div id="cart-items" class="mb-4"></div>
+      <p class="text-xl font-bold">Total: <span id="total-amount">Rp. 0</span></p>
+      <button id="close-cart" class="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg">Close</button>
+    </div>
+  </div>
+
+  <script src="sricpts.js"></script>
+</body>
+</html>
